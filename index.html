@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+	<meta charset="UTF-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+
+	<script src="./js/calculadora.js"></script>
+
+	<title>Calculadora Numérica</title>
+
+</head>
+
+<body>
+
+	<header>
+
+		<div class="header-div">
+
+			<div class="header-div-esquerda">
+				<a href="https://www.linkedin.com/in/salomrodr" target="_blank"><i class="fab fa-linkedin"></i></a>
+				<a href="https://github.com/salomrodr" target="_blank"><i class="fab fa-github"></i></a>
+				<a href="https://discord.com/channels/@salomrodr" target="_blank"><i class="fab fa-discord"></i></a>
+				<a href="mailto:scrisrjbr@gmail.com" target="_blank"><i class="far fa-envelope"></i></a>
+			</div>
+
+			<div class="header-div-central">
+				<strong>Calculadora Numérica</strong>
+			</div>
+
+			<div class="header-div-direita">
+				<a href="https://www.instagram.com/salomrodr" target="_blank"><i class="fab fa-instagram"></i></a>
+				<a href="https://www.facebook.com/salomrodr" target="_blank"><i class="fab fa-facebook"></i></a>
+				<a href="https://twitter.com/salomrodr" target="_blank"><i class="fab fa-twitter"></i></a>
+				<a href="https://wa.me/+5521973867527" target="_blank"><i class="fab fa-whatsapp"></i></a>
+			</div>
+
+		</div>
+
+	</header>
+
+	<main>
+
+		<div class="calculadora">
+
+			<!-- Início: Display de Calculadora -->
+
+			<table class="tabela1">
+				<tr>
+					<td style="border-radius:15px;" id="resultado"></td>
+				</tr>
+			</table>
+
+			<!-- Fim: Display de Calculadora -->
+
+			<!-- Início: Estrutura da Calculadora -->
+
+			<table class="tabela2">
+				<tr>
+					<td><button class="botao" onclick="limpar()">C</button></td>
+					<td><button class="botao" onclick="voltar()">&lt;</button></td>
+					<td><button class="botao" onclick="insert('/')">/</button></td>
+					<td><button class="botao" onclick="insert('*')">x</button></td>
+				</tr>
+				<tr>
+					<td><button class="botao" onclick="insert('7')">7</button></td>
+					<td><button class="botao" onclick="insert('8')">8</button></td>
+					<td><button class="botao" onclick="insert('9')">9</button></td>
+					<td><button class="botao" onclick="insert('-')">-</button></td>
+				</tr>
+				<tr>
+					<td><button class="botao" onclick="insert('4')">4</button></td>
+					<td><button class="botao" onclick="insert('5')">5</button></td>
+					<td><button class="botao" onclick="insert('6')">6</button></td>
+					<td><button class="botao" onclick="insert('+')">+</button></td>
+				</tr>
+				<tr>
+					<td><button class="botao" onclick="insert('1')">1</button></td>
+					<td><button class="botao" onclick="insert('2')">2</button></td>
+					<td><button class="botao" onclick="insert('3')">3</button></td>
+					<td rowspan="2"><button class="botao" style="height:106px" onclick="calcular()">=</button></td>
+				</tr>
+				<tr>					
+					<td colspan="2"><button class="botao" style="width:106px" onclick="insert('0')">0</button></td>
+					<td><button class="botao" onclick="insert('.')">.</button></td>
+				</tr>
+			</table>
+
+			<!-- Fim: Estrutura da Calculadora -->
+
+		</div>
+
+	
+
+
+
+
+
+	</main>
+
+	<footer>
+
+		<div class="rodape1">
+			Desenvolvido por Salomão Rodrigues no Curso de Programador Front-End (SENAI), sob orientação do <a href="https://sammyfreitas.github.io/portfolioSite" target="_blank">Prof. Anthony Freitas</a>
+		</div>
+
+		<div class="rodape2">
+				Copyright © 2023 Dev Rodrigues | All Rights Reserved
+		</div>
+
+		<div class="rodape3">
+			<a href="https://wa.me/+5521973867527" target="_blank">WhatsApp: (21) 97386-7527</a>
+		</div>
+
+    </footer>
+
+</body>
+
+</html>
+
+
